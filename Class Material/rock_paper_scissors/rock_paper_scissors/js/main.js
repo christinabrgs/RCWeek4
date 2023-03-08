@@ -1,17 +1,28 @@
 var botScore=0,
 	playerScore=0;
 document.getElementById("rock").onclick=playerThrowsRock;
+document.getElementById("paper").onclick=playerThrowsPaper;
+document.getElementById("scissors").onclick=playerThrowsScissors;
+
 function playerThrowsRock(){
 	var botsWeapon="paper";//getRandomWeapon();
 	checkWhoWon(botsWeapon,"rock");
+	var botsWeapon="scissors";//getRandomWeapon();
+	checkWhoWon(botsWeapon,"rock");
+	var botsWeapon="rock";//getRandomWeapon();
+	checkWhoWon(botsWeapon,"rock");
+	getRandomWeapon()
 }
+
 function playerThrowsScissors(){
+	getRandomWeapon(randomNumber, BotsWeapon);
+	checkWhoWon(botsWeapon,"scissors");
 
 }
 function playerThrowsPaper(){
 
 }
-function getRandomWeapon(){
+function getRandomWeapon(randomNumber, BotsWeapon){
 	var randomNumber=Math.random();
 	var botsWeapon="rock";
 	if(randomNumber<.33){
