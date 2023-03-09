@@ -5,21 +5,19 @@ document.getElementById("paper").onclick=playerThrowsPaper;
 document.getElementById("scissors").onclick=playerThrowsScissors;
 
 function playerThrowsRock(){
-	var botsWeapon="paper";//getRandomWeapon();
-	checkWhoWon(botsWeapon,"rock");
-	var botsWeapon="scissors";//getRandomWeapon();
-	checkWhoWon(botsWeapon,"rock");
-	var botsWeapon="rock";//getRandomWeapon();
-	checkWhoWon(botsWeapon,"rock");
-	getRandomWeapon()
+	let botsWeapon = getRandomWeapon()
+	checkWhoWon(getRandomWeapon(),"rock");
 }
 
 function playerThrowsScissors(){
-	getRandomWeapon(randomNumber, BotsWeapon);
-	checkWhoWon(botsWeapon,"scissors");
+	let botsWeapon = getRandomWeapon()
+	checkWhoWon(getRandomWeapon(),"scissors");
 
 }
 function playerThrowsPaper(){
+	let botsWeapon = getRandomWeapon()
+	checkWhoWon(getRandomWeapon(),"paper");
+
 
 }
 function getRandomWeapon(randomNumber, BotsWeapon){
@@ -54,6 +52,9 @@ function increaseBotScore(){
 	displayCompleteMessage("Sorry, you're a loser");
 }
 function increasePlayerScore(){
+	playerScore+=1;
+	document.getElementById("humanScore").innerHTML=playerScore;
+	displayCompleteMessage("Winner, winner, chicken dinner");
 
 }
 function displayCompleteMessage(msg){
