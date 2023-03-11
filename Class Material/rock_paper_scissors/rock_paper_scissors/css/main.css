@@ -2,19 +2,39 @@
     box-sizing: border-box;
 }
 
+.wordStyle {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(92, 62, 117);
+    font-family: 'Rampart One', cursive;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+strong {
+    color: rgb(197, 90, 19);
+}
+
 img {
     width: 100%;
     float: left;
+    
 }
 
-
 .choose, #status {
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
 }
 
 button {
-    width: 24%;
+    width: 33.3%;
     float: left;
     height: 500px;
     background: transparent;
@@ -24,4 +44,11 @@ button {
 #status {
     clear: both;
     text-align: center;
+    font-size: 2em;
 }
+table {
+    margin: 0 auto;
+    color: rgb(107, 107, 107);
+    font-size: 1.3em;
+}
+

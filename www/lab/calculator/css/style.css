@@ -16,3 +16,52 @@
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+body {
+  margin-top: 0 auto;
+  background: lightgray;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.3em;
+  color: red;
+}
+
+
+.inputStyle, .buttonStyle {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+} 
+
+input {
+  width: 60%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.buttonStyle {
+  padding: 30px 0px;
+}
+
+button {
+  background: black;
+  color: white;
+  width: 10%;
+  height: 50px;
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0 10px;
+}

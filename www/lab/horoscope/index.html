@@ -5,14 +5,30 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>What's Your Zodiac Sign</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+
+		<h1>WHAT IS YOUR ZODIAC SIGN</h1>
+
+		<section class="imgContainer">
+		<img src="img/zodiac.png" alt="zodiac-wheel">
+		</section>
+
+		<section class="birthInfo">
+		<input type="number" id="month" placeholder="MONTH">
+		<input type="number" id="day" placeholder="DAY">
+		</section>
 		
+		<section class="resultSection">
+		<button id="click" type="button"> CHECK YOUR SIGN </button>
+		
+		<h2 id="result"> </h2>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
